@@ -1,21 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Etec Aguaí</title>
-		<link rel="stylesheet" href="estilos.css">
-	</head>
-	<body>
-		<header>
-			<h1> Bem-vindo à Etec Arnaldo Pereira Cheregatti </h1>
-		</header>
-		<main>
-			<p> Venha fazer um curso técnico de qualidade. 
-			Se você não possui uma formação profissional,
-			saiba que ela pode ajudar você a conquistar
-			ou melhorar a sua carreira.</p>
-		</main>
-	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/meuestilo.css">
+    <script src="js/bootstrap.js" defer></script>
+    <title>Só Relógios</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-cor-1" id="navbar">
+        <div class="container">
+            <a href="#" class="navbar-brand cor-clara">Só Relógios</a>
+            <div id="navbar-itens">
+                    <form class="d-flex" id="form-pesquisa">
+                        <i class="bi bi-search cor-1"></i>
+                        <input type="search" class="form-control ms-3"
+                        name="search" id="search" placeholder="Busque um relógio...">
+                        <button class="btn bg-cor-2" type="submit">Pesquisar</button>
+                    </form>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                             <a href="#" class="nav-link cor-clara">
+                                <i class="bi bi-person"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link cor-clara">
+                                <i class="bi bi-heart"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link cor-clara">
+                                <i class="bi bi-bag"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>       
+        </div>
+    </nav>
+    <!-- FIM NAVBAR SUPERIOR -->
 
-	</body>
+    <!-- NAVBAR INFERIOR -->
+    <nav class="navbar navbar-expand-lg bg-cor-2 p-2" id="container-navbar-inferior">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-inferior" aria-controls="navbar-inferior" aria-expanded="false" aria-label="Botão Menu Hamburguer">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="navbar-inferior" >
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">
+                        Produtos
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">
+                        Quem somos
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="nav-link">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- FIM DA NAVBAR INFERIOR -->
+
+    <!-- BANNERS -->
+    <div class="container" id="banners-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/banner1.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption bg-cor-1">
+                        <h3>Relógios com design único</h3>
+                        <p>Para qualquer ocasião.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner2.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption bg-cor-1">
+                        <h3>Relógios com design único</h3>
+                        <p>Para qualquer ocasião.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner3.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption bg-cor-1">
+                        <h3>Relógios finos</h3>
+                        <p>Para todos os gostos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner4.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption bg-cor-1">
+                        <h3>Relógios finos</h3>
+                        <p>Para todos os gostos.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+        </div>
+    </div>
+    <!-- FIM DO BANNERS -->
+
+    <!-- INICIO DOS MINI BANNERS -->
+    <div class="container" id="mini-banners-container">
+        <div class="row justify-content-around">
+            <div class="col-12 bg-cor-escura" id="mini-banner-1">
+                <h2>Nova Coleção</h2>
+                <img src="img/relogio1.png" alt="Primeiro Relógio">
+                <a href="Compre Já!"></a>
+            </div>
+            <div class="col-12 bg-cor-escura" id="mini-banner-1">
+                <h2>Nova Coleção</h2>
+                <img src="img/relogio2.png" alt="Segundo Relógio">
+                <a href="Compre Já!"></a>
+            </div>
+            <div class="col-12 bg-cor-escura" id="mini-banner-1">
+                <h2>Nova Coleção</h2>
+                <img src="img/relogio3.png" alt="Terceiro Relógio">
+                <a href="Compre Já!"></a>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
