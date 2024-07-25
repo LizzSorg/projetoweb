@@ -1,0 +1,159 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #252525;
+    color:#fff;
+}
+/* CORES DE FUNDO */
+.bg-cor-1{
+    background-color: #252525;
+}
+.bg-cor-2{
+    background-color: #c09578;
+}
+
+/* CORES PARA TEXTO */
+.cor-1{
+    color:#c09578;
+}
+
+.cor-2{
+    color:#626262;
+}
+
+.cor-clara{
+    color:#fcf5eb;
+}
+
+.cor-escura{
+    color:#101010;
+}
+
+/* Estilos para o link da marca (navbar-brand) */
+.navbar-brand{
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-brand:hover{
+    color: #aea7a7;
+}
+
+@media(min-width:768px){
+    .navbar-brand{
+        text-align: left;
+    }
+}
+
+/* Ajuste dos ícones da navbar */
+#navbar-itens{
+    justify-content: space-between;
+}
+
+@media(min-width:768px){
+    #navbar-itens{
+        min-width:80%;
+        display: flex;
+    }
+}
+#navbar .navbar-nav{
+    flex-direction: row;
+    justify-content: end;
+}
+#navbar .navbar-nav li{
+    margin-left: 1em;
+}
+#navbar i{
+    font-size: 1.2rem;
+}
+/* Ajuste da largura do form de pesquisa */
+#form-pesquisa{
+    width: 100%;
+    margin: 2em 0;
+}
+@media(min-width:768px){
+    #form-pesquisa{
+        width: 50%;
+        margin:0;
+    }
+}
+
+/* Estilizando o form de pesquisa */
+#form-pesquisa{
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+    
+}
+
+#form-pesquisa input{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+
+#form-pesquisa input:focus{
+box-shadow: none;
+}
+
+#form-pesquisa input::placeholder{
+    color:#fcf5eb;
+}
+
+/* CSS DA NAVBAR INFERIOR */
+#container-navbar-inferior .container{
+    justify-content: flex-end;
+}
+/* estilizando o texto dos links da navbar inferior */
+#container-navbar-inferior a{
+    font-weight: 600;
+    color:#fff;
+}
+
+.navbar-toggler{
+    font-size:1.5em;
+}
+
+/* Meus Estilos para os Banners */
+
+#banners-container{
+    padding: 0;
+}
+
+.carousel-caption{
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+}
+
+.carousel-caption h5{
+    font-size: 1.8em;
+}
+
+@media(min-widht: 768px){
+    #slider .carousel-item,
+    #slider img{
+        height: 600px;
+    }
+}
+
+/* CSS dos mini-banners */
+
+#mini-bannerss{
+    margin-top: 3em;
+    z-index: 10;
+}
+
+#mini-banners .col-12{
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
